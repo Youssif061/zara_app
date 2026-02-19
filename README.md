@@ -1,3 +1,3 @@
-# zara_app
+# zara_application
 
 A new Flutter project.
