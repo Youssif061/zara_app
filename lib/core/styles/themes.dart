@@ -3,6 +3,9 @@ import 'package:zara_application/core/styles/app_colors.dart';
 
 class Themes {
   static ThemeData get light => ThemeData(
+    splashColor: Colors.transparent,
+    highlightColor: Colors.transparent,
+    // splashFactory: NoSplash.splashFactory,
     fontFamily: 'CircularStd',
     scaffoldBackgroundColor: AppColors.backgroundColor,
     colorScheme: ColorScheme.fromSeed(
@@ -15,10 +18,12 @@ class Themes {
       surfaceTintColor: Colors.transparent,
     ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      showSelectedLabels: false,
+      showUnselectedLabels: false,
+      elevation: 0,
+      selectedIconTheme: IconThemeData(color: AppColors.primaryColor),
       backgroundColor: AppColors.backgroundColor,
       type: BottomNavigationBarType.fixed,
-      selectedItemColor: AppColors.primaryColor,
-      unselectedItemColor: AppColors.lightGreyColor,
     ),
   );
 }
