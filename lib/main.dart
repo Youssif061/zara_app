@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:zara_application/core/styles/themes.dart';
+import 'package:zara_application/main/main_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -22,7 +23,7 @@ class MainApp extends StatelessWidget {
           child: child ?? Container(),
         );
       },
-      //home:SplashScreen(),
+      home:MainAppScreen(),
     );
   }
 }

@@ -4,7 +4,7 @@ class AppImages {
   static const String belblackPulloverl = "assets/images/blackPullover.png";
   static const String checkout = "assets/images/checkout.png";
   static const String email = "assets/images/email.png";
-  static const String gymbags = "assets/images/gymbags.png";
+  static const String gymbags = "assets/images/gymbags.jpg";
   static const String hoddieColors = "assets/images/hoddieColors.png";
   static const String hoodie = "assets/images/hoodie.png";
   static const String jacket = "assets/images/jacket.png";
@@ -15,7 +15,7 @@ class AppImages {
   static const String yellowhoddie = "assets/images/yellowhoddie.png";
   static const String arrowdownSvg = "assets/icons/arrowdown2.svg";
   static const String arrowleftSvg = "assets/icons/arrowleft2.svg";
-  static const String arrowrightSvg = "assets/icons/arrowright.svg";
+  static const String arrowrightSvg = "assets/icons/arrowrigh.svg";
   static const String bellSvg = "assets/icons/bell.svg";
   static const String correctSvg = "assets/icons/correct.svg";
   static const String faviconSvg = "assets/icons/fav-icon.svg";
@@ -27,4 +27,6 @@ class AppImages {
   static const String discountshapeSvg = "assets/icons/discountshape.svg";
   static const String addSvg = "assets/icons/add.svg";
   static const String minusSvg = "assets/icons/minus.svg";
+  static const String heartSvg = "assets/icons/heart.svg";
+
 }

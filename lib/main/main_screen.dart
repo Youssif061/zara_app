@@ -17,7 +17,8 @@ class _MainAppScreenState extends State<MainAppScreen> {
     Center(child: Text("Home Screen")),
     Center(child: Text("notification Screen")),
     Center(child: Text("List Screen")),
-    Center(child: Text("Profile Screen")),
+    Center(child: Text("profile Screen")),
+    
   ];
   @override
   Widget build(BuildContext context) {
