@@ -13,6 +13,7 @@ class AppImages {
   static const String short = "assets/images/short.png";
   static const String slipper = "assets/images/slipper.png";
   static const String yellowhoddie = "assets/images/yellowhoddie.png";
+  static const String imageprofile = "assets/images/Imageprofile.png";
   static const String arrowdownSvg = "assets/icons/arrowdown2.svg";
   static const String arrowleftSvg = "assets/icons/arrowleft2.svg";
   static const String arrowrightSvg = "assets/icons/arrowrigh.svg";
@@ -28,5 +29,5 @@ class AppImages {
   static const String addSvg = "assets/icons/add.svg";
   static const String minusSvg = "assets/icons/minus.svg";
   static const String heartSvg = "assets/icons/heart.svg";
-
+  static const String manSvg = "assets/icons/ManSvg_icon.svg";
 }
