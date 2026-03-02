@@ -1,7 +1,7 @@
 class AppImages {
   static const String accessories = "assets/images/accessories.png";
   static const String bell = "assets/images/bell.png";
-  static const String belblackPulloverl = "assets/images/blackPullover.png";
+  static const String blackPulloverl = "assets/images/blackPullover.png";
   static const String checkout = "assets/images/checkout.png";
   static const String email = "assets/images/email.png";
   static const String gymbags = "assets/images/gymbags.jpg";
@@ -22,11 +22,16 @@ class AppImages {
   static const String homeSvg = "assets/icons/home2.svg";
   static const String listSvg = "assets/icons/list.svg";
   static const String personSvg = "assets/icons/person.svg";
-  static const String searchnormalSvg = "assets/icons/searchnormal1.svg";
+  static const String searchNormalSvg = "assets/icons/searchnormal1.svg";
   static const String baglSvg = "assets/icons/bag2.svg";
   static const String discountshapeSvg = "assets/icons/discountshape.svg";
   static const String addSvg = "assets/icons/add.svg";
   static const String minusSvg = "assets/icons/minus.svg";
   static const String heartSvg = "assets/icons/heart.svg";
-
+  static const String wrongSvg = "assets/icons/wrong.svg";
+  static const String filterSvg = "assets/icons/filter.svg";
+  static const String blueJacket = "assets/images/blueJacket.png";
+  static const String skateJacket = "assets/images/skateJacket.png";
+  static const String workWearJacket = "assets/images/workWearJacket.png";
+  static const String notFoundJason = "assets/lottie/No data found.json";
 }

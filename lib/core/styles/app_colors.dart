@@ -7,5 +7,6 @@ class AppColors {
     static const Color blackColor = Color(0xFF181725);
     static const Color redColor = Color(0xFFFA3636);
     static const Color accentGrey = Color(0xFF272727);
+    static const Color accentGrey1 = Color(0xFF000000);
 
 }

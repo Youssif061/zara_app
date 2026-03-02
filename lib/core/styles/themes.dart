@@ -3,6 +3,18 @@ import 'package:zara_application/core/styles/app_colors.dart';
 
 class Themes {
   static ThemeData get light => ThemeData(
+    inputDecorationTheme: InputDecorationTheme(
+      fillColor: AppColors.lightGreyColor,
+      filled: true,
+      enabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(20),
+        borderSide: BorderSide.none,
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(20),
+        borderSide: BorderSide.none,
+      ),
+    ),
     splashColor: Colors.transparent,
     highlightColor: Colors.transparent,
     // splashFactory: NoSplash.splashFactory,

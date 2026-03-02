@@ -11,6 +11,8 @@ dependencies:
     sdk: flutter
   flutter_rating_bar: ^4.0.1
   flutter_svg: ^2.2.3
+  gap: ^3.0.1
+  lottie: ^3.3.2
 
 dev_dependencies:
   flutter_test:
@@ -22,6 +24,7 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+    - assets/lottie/
   fonts:
     - family: CircularStd
       fonts:
