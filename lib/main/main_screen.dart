@@ -3,7 +3,12 @@ import 'package:flutter_svg/svg.dart';
 import 'package:zara_application/core/constant/app_images.dart';
 import 'package:zara_application/core/styles/app_colors.dart';
 import 'package:zara_application/core/widgets/svg_active_icon.dart';
+
 import 'package:zara_application/feature/profile/page/profile_page.dart';
+
+import 'package:zara_application/main/HomePage/Home_Screen.dart';
+import 'package:zara_application/main/HomePage/List_Screen.dart';
+import 'package:zara_application/main/HomePage/notification_Screen.dart';
 
 class MainAppScreen extends StatefulWidget {
   const MainAppScreen({super.key});
@@ -15,11 +20,13 @@ class MainAppScreen extends StatefulWidget {
 class _MainAppScreenState extends State<MainAppScreen> {
   int currentIndex = 0;
   List<Widget> screen = [
-    Center(child: Text("Home Screen")),
-    Center(child: Text("notification Screen")),
-    Center(child: Text("list Screen")),
-    ProfilePage(),
+
     
+
+    Home_Screen(),
+    Notification_Screen(),
+    List_Screen(),
+    ProfilePage(),
   ];
   @override
   Widget build(BuildContext context) {
