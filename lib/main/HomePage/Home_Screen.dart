@@ -3,7 +3,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:zara_application/core/constant/app_images.dart';
 import 'package:zara_application/core/styles/app_colors.dart';
 import 'package:zara_application/core/widgets/custom_text_form_field.dart';
-import 'package:zara_application/core/widgets/elevated_custom_button.dart';
 
 class Home_Screen extends StatefulWidget {
   const Home_Screen({super.key});
