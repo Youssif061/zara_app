@@ -15,7 +15,7 @@ class hoodiesPage extends StatelessWidget {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {
-            Navigations.naviagationPush(context, SeeAll());
+            Navigations.naviagationPop(context);
           },
           icon: SvgPicture.asset(AppImages.backIconSvg),
         ),

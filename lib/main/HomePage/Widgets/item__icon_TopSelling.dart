@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:zara_application/core/constant/app_images.dart';
+import 'package:zara_application/core/functions/navigations.dart';
 import 'package:zara_application/core/styles/text_styles.dart';
+import 'package:zara_application/feature/product/page/product_page.dart';
 import 'package:zara_application/feature/search/data/dummy_data.dart';
 
 class ItemIcon extends StatelessWidget {
@@ -10,46 +12,58 @@ class ItemIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 240,
-      width: 160,
-      padding: const EdgeInsets.all(1),
-      decoration: BoxDecoration(borderRadius: BorderRadius.circular(12)),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Stack(
-            children: [
-              ClipRRect(
-                borderRadius: BorderRadius.circular(12),
-                child: Image.asset(
-                  model.imagePath,
-                  height: 200,
-                  width: 160,
-                  fit: BoxFit.cover,
+    return InkWell(
+      onTap: () {
+        Navigations.naviagationPush(
+          context,
+          ProductPage(
+            name: model.name,
+            price: model.price,
+            imagePath: model.imagePath,
+          ),
+        );
+      },
+      child: Container(
+        height: 240,
+        width: 160,
+        padding: const EdgeInsets.all(1),
+        decoration: BoxDecoration(borderRadius: BorderRadius.circular(12)),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Stack(
+              children: [
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(12),
+                  child: Image.asset(
+                    model.imagePath,
+                    height: 200,
+                    width: 160,
+                    fit: BoxFit.cover,
+                  ),
                 ),
-              ),
-              Positioned(
-                top: 9,
-                right: 12,
-                child: SvgPicture.asset(
-                  AppImages.faviconSvg,
-                  height: 24,
-                  width: 24,
+                Positioned(
+                  top: 9,
+                  right: 12,
+                  child: SvgPicture.asset(
+                    AppImages.faviconSvg,
+                    height: 24,
+                    width: 24,
+                  ),
                 ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 6),
-          Text(
-            model.name,
-            style: TextStyles.small.copyWith(fontWeight: FontWeight.w500),
-          ),
-          Text(
-            model.price,
-            style: TextStyles.caption.copyWith(fontWeight: FontWeight.w700),
-          ),
-        ],
+              ],
+            ),
+            const SizedBox(height: 6),
+            Text(
+              model.name,
+              style: TextStyles.small.copyWith(fontWeight: FontWeight.w500),
+            ),
+            Text(
+              model.price,
+              style: TextStyles.caption.copyWith(fontWeight: FontWeight.w700),
+            ),
+          ],
+        ),
       ),
     );
   }

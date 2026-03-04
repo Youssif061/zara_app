@@ -3,7 +3,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:zara_application/core/constant/app_images.dart';
 import 'package:zara_application/core/functions/navigations.dart';
 import 'package:zara_application/core/styles/text_styles.dart';
-import 'package:zara_application/main/HomePage/Pages/Home_Screen.dart';
 import 'package:zara_application/main/HomePage/Pages/hoodies.dart';
 import 'package:zara_application/main/HomePage/Widgets/list_view_for_see_all.dart';
 
@@ -15,7 +14,7 @@ class SeeAll extends StatelessWidget {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {
-            Navigations.naviagationPush(context, Home_Screen());
+            Navigations.naviagationPop(context);
           },
           icon: SvgPicture.asset(AppImages.backIconSvg),
         ),
