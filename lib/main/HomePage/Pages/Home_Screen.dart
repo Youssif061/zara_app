@@ -5,6 +5,7 @@ import 'package:zara_application/core/functions/navigations.dart';
 import 'package:zara_application/core/styles/app_colors.dart';
 import 'package:zara_application/core/styles/text_styles.dart';
 import 'package:zara_application/core/widgets/custom_text_form_field.dart';
+import 'package:zara_application/feature/search/pages/search_page.dart';
 import 'package:zara_application/main/HomePage/Pages/SeeAll.dart';
 import 'package:zara_application/main/HomePage/Widgets/list_view_NewIn.dart';
 import 'package:zara_application/main/HomePage/Widgets/list_view_TopSelling.dart';
@@ -61,6 +62,9 @@ class _Home_ScreenState extends State<Home_Screen> {
           child: Column(
             children: [
               CustomTextFormField(
+                onTap: () {
+                  Navigations.naviagationPush(context, SearchPage());
+                },
                 text: 'Search',
                 height: 50,
                 prefixIcon: Icon(Icons.search),
