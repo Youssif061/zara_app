@@ -28,6 +28,7 @@ class Themes {
     appBarTheme: AppBarTheme(
       backgroundColor: AppColors.backgroundColor,
       surfaceTintColor: Colors.transparent,
+      elevation: 0,
     ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       showSelectedLabels: false,

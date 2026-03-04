@@ -38,4 +38,5 @@ class AppImages {
   static const String notFoundJason = "assets/lottie/No data found.json";
 
   static const String manSvg = "assets/icons/ManSvg_icon.svg";
+  static const String backIconSvg = "assets/icons/backIconSvg.svg";
 }
