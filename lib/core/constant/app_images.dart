@@ -39,4 +39,6 @@ class AppImages {
 
   static const String manSvg = "assets/icons/ManSvg_icon.svg";
   static const String backIconSvg = "assets/icons/backIconSvg.svg";
+  static const String Frame_17 = "assets/icons/Frame 17.svg";
+  static const String Frame_104 = "assets/icons/Frame 104.svg";
 }
