@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:zara_application/core/constant/app_images.dart';
+import 'package:zara_application/core/functions/navigations.dart';
 import 'package:zara_application/core/styles/app_colors.dart';
 import 'package:zara_application/core/styles/text_styles.dart';
 import 'package:zara_application/core/widgets/custom_text_form_field.dart';
-import 'package:zara_application/main/Widget/list_view_market.dart';
+import 'package:zara_application/main/HomePage/Pages/SeeAll.dart';
+import 'package:zara_application/main/HomePage/Widgets/list_view_NewIn.dart';
+import 'package:zara_application/main/HomePage/Widgets/list_view_TopSelling.dart';
+import 'package:zara_application/main/HomePage/Widgets/list_view_for_categorios.dart';
 
 class Home_Screen extends StatefulWidget {
   const Home_Screen({super.key});
@@ -80,7 +84,9 @@ class _Home_ScreenState extends State<Home_Screen> {
                         minimumSize: Size.zero,
                         padding: EdgeInsets.zero,
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigations.naviagationPush(context, SeeAll());
+                      },
                       child: Text(
                         'See All',
                         style: TextStyles.caption.copyWith(
@@ -91,42 +97,9 @@ class _Home_ScreenState extends State<Home_Screen> {
                   ),
                 ],
               ),
-              SizedBox(
-                height: 90,
-                width: double.infinity,
-                child: ListView.separated(
-                  itemCount: 5,
-                  scrollDirection: Axis.horizontal,
-                  separatorBuilder: (context, index) =>
-                      const SizedBox(width: 10),
-                  itemBuilder: (BuildContext context, int index) {
-                    return SizedBox(
-                      height: 80,
-                      width: 65,
-                      child: Container(
-                        padding: EdgeInsets.all(1),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: Column(
-                          children: [
-                            Expanded(
-                              child: Center(
-                                child: ClipOval(
-                                  child: Image.asset(AppImages.hoodie),
-                                ),
-                              ),
-                            ),
-                            Text('Hoodies'),
-                          ],
-                        ),
-                      ),
-                    );
-                  },
-                ),
-              ),
+              ListViewForCategorios(),
               ListViewMarket(TextCategory: "Top Selling"),
-              ListViewMarket(TextCategory: "New In"),
+              ListViewMarketfornew(TextCategory: "New In"),
             ],
           ),
         ),
